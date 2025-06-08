@@ -1,0 +1,26 @@
+.input {
+  border: 1px white solid;
+  width: 50px;
+  box-shadow: inset 0px 0px 20px 0px #fff;
+  border-radius: 10px;
+  color: white;
+  caret-color: transparent;
+  opacity: 0.5;
+
+  font-weight: 600;
+  &:focus {
+    opacity: 1;
+    box-shadow: inset 0px 0px 20px 0px #f3b48c;
+  }
+  &::selection {
+    background: transparent; /* Safari */
+  }
+
+  &::-moz-selection {
+    background: #ffb7b7; /* Firefox */
+  }
+}
+
+.input-filled {
+  opacity: 1;
+}
