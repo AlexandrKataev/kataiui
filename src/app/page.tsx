@@ -13,9 +13,11 @@ export default function Home() {
       <OTPInput
         value={value}
         onChange={(value) => {
-          setValue(value);
-          if (value.length === 4) {
-            alert(value);
+          if (/^\d+$/.test(value) || value === "") {
+            setValue(value);
+            if (value.length === 4) {
+              alert(value);
+            }
           }
         }}
         containerStyle={{ gap: "10px" }}
@@ -23,7 +25,8 @@ export default function Home() {
         renderInput={(qwe) => (
           <input
             {...qwe}
-            type="tel"
+            type="number"
+            inputMode="numeric"
             className={clsx(styles.input, qwe.value && styles["input-filled"])}
           />
         )}
