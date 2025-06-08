@@ -20,7 +20,7 @@ export default function Home() {
         }}
         containerStyle={{ gap: "10px" }}
         inputStyle={{ width: "50px", height: "50px" }}
-        renderInput={(qwe, index) => (
+        renderInput={(qwe) => (
           <input
             {...qwe}
             type="tel"
