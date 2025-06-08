@@ -16,7 +16,6 @@ export default function Home() {
           setValue(value);
           if (value.length === 4) {
             alert(value);
-            setValue("");
           }
         }}
         containerStyle={{ gap: "10px" }}
